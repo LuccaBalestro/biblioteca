@@ -1,0 +1,79 @@
+body{
+    background: #6e5c4d;
+    background: linear-gradient(179deg, rgb(41, 36, 32) 0%, rgb(59, 47, 36) 50%, rgb(22, 19, 17) 100%);
+    background-image: url("/images/wood.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    color: rgb(231, 217, 204);
+    height: 100vh;
+    display: flex;
+    padding-bottom: 3%;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%
+}
+
+.imgprin{
+    display: flex;
+    justify-self: center;
+    border-radius: 7px;
+    margin: 0.5%;
+    border: 2px solid white;
+}
+
+header{
+    width: 100%;
+    border: 1px solid rgb(71, 50, 35);
+    border-radius: 4px;
+    position: fixed;
+    top: 0;
+    padding-top: 2%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    margin-left:-6px;
+    font-size: x-large;
+    background:pink;
+    background: linear-gradient(rgb(61, 54, 48) 0%, rgb(77, 63, 50) 50%, rgb(48, 41, 37) 100%);
+}
+
+.bodytext{
+    display: grid;
+    grid-template: "auto auto / auto auto";
+}
+
+a{
+    text-decoration: none;
+    color: rgb(206, 158, 113);
+}
+
+a:hover{
+    color: rgb(250, 203, 116);
+}
+
+footer{    
+    width: 100%;
+    border: 1px solid rgb(71, 50, 35);
+    border-radius: 4px;
+    padding-top: 1%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top:auto;
+    font-size: large;
+    background:pink;
+    background: linear-gradient(rgb(39, 36, 31) 0%, rgb(51, 44, 38) 50%, rgb(80, 69, 62) 100%);
+}
+
+main{
+    margin-bottom: 2%;
+    margin-top: 4%
+}
+
+.card{
+    font-size:120%;
+    color:rgb(237, 235, 255);
+}
