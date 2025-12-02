@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Jogos</title>
+    <style>
+        .shelf{
+            position: absolute;
+            background-image: url(/images/shelf.png); 
+            background-size: contain;
+            background-repeat: no-repeat;  
+            background-size: 100% 100%;
+            border: 2px solid rgb(109, 64, 47);
+            display: grid; 
+            width: 1000;
+            height: 1000;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+        }
+
+        .imgshelf{
+            margin: 30px; 
+            margin-left: 45px;
+            margin-right: 45px;
+            width: 125px;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .imgshelf:hover{
+            scale: 120%;  
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <header><strong><a href="./home.html">A Biblioteca</a></strong> | <u>Jogos</u> | <a href="listfilmes.html">Filmes e Séries</a> | <a href="buscar.html">Buscar</a> </header>
+    <div class="shelf">
+       <a href="/html/wandersong.html" title="Wandersong"><img class="imgprin imgshelf" alt="Wandersong capa" src="/images/wandersongcapa.jpg"></a>
+       <a href="/html/pseudoregalia.html" title="Pseudoregalia"><img class="imgprin imgshelf" alt="Pseudoregalia capa" src="/images/pseudoregaliacapa.jpg"></a>
+       <a href="/html/vallhalla.html" title="VA11 HALL-A"><img class="imgprin imgshelf" alt="VA11 HALL-A capa" src="/images/vallhallacapa.png"></a>
+       <a href="/html/ultrakill.html" title="Ultrakill"><img class="imgprin imgshelf" alt="Ultrakill capa" src="/images/ultrakillcapa.jpg"></a>
+       <a href="/html/celeste.html" title="Celeste"><img class="imgprin imgshelf" alt="Celeste capa" src="/images/celestecapa.png"></a>
+       <a href="/html/silksong.html" title="Hollow Knight: Silksong"><img class="imgprin imgshelf" alt="Hollow Knight: Silksong capa" src="/images/silksongcapa.jpeg"></a>
+       <a href="/html/bugfables.html" title="Bug Fables"><img class="imgprin imgshelf" alt="Bug Fables capa" src="/images/bugfablescapa.jpg"></a>
+       <a href="/html/babaisyou.html" title="Baba Is You"><img class="imgprin imgshelf" alt="Baba Is You capa" src="/images/Baba_is_you_cover_art.jpg"></a>
+       </div>
+    <footer>
+        Lucca Balestro, 2025 | <a href="/html/formopiniao.html">Mande sua opinião aqui!</a> | <a href="/html/contato.html">Faça contato aqui!</a>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 12px; 
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px; 
+            padding: 12px 20px 12px 40px;
+            border: 2px dashed #afafaf; 
+            margin-bottom: 12px; 
+            margin-top: 12px;
+            margin-left: 2.5%;
+            max-width: 60%; 
+            border-radius: 5px
+            }
+
+            #myTable {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse; /* Collapse borders */
+            width: 95%; /* Full-width */
+            border: 1px solid #ddd; /* Add a grey border */
+            font-size: 18px; /* Increase font-size */
+            }
+
+            #myTable th, #myTable td {
+            text-align: left; /* Left-align text */
+            padding: 12px; /* Add padding */
+            }
+
+            #myTable tr {
+            /* Add a bottom border to all table rows */
+            border-bottom: 1px solid #ddd;
+            }
+
+            #myTable tr.header, #myTable tr:hover {
+            /* Add a grey background color to the table header and on hover */
+            background-color: #f1f1f1;
+            }
+
+            tr{
+              background-color: rgb(87, 69, 53);
+            }
+    </style>
+    <script>
+        function myFunction() {
+          // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }
+            }
+            }
+    </script>
+</head>
+<body>
+  <header><strong><a href="./home.html">A Biblioteca</a></strong> | <a href="listjogos.html">Jogos</a> | <a href="listfilmes.html">Filmes e Séries</a> | <u>Buscar</u> </header>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procurar por nome">
+<table id="myTable" style="margin-bottom: 40px;">
+  <tr class="header">
+    <th style="width:60%; background-color:rgb(231, 217, 204); color: grey">Nome</th>
+    <th style="width:40%;  background-color:rgb(231, 217, 204); color: grey">Tipo</th>
+  </tr>
+  <tr>
+    <td><a href="babaisyou.html">Baba is You</a></td>
+    <td>Jogo</td>
+  </tr>
+    <tr>
+    <td><a href="bugfables.html">Bug Fables</a></td>
+    <td>Jogo</td>
+  </tr>
+    <tr>
+    <td><a href="celeste.html">Celeste</a></td>
+    <td>Jogo</td>
+  </tr>
+    <tr>
+    <td><a href="coraline.html">Coraline</a></td>
+    <td>Filme</td>
+  </tr>
+    <tr>
+    <td><a href="gravityfalls.html">Gravity Falls</a></td>
+    <td>Série</td>
+  </tr>
+      <tr>
+    <td><a href="silksong.html">Hollow Knight: Silksong</a></td>
+    <td>Jogo</td>
+  </tr>
+      <tr>
+    <td><a href="pseudoregalia.html">Pseudoregalia</a></td>
+    <td>Jogo</td>
+  </tr>
+      <tr>
+    <td><a href="schoollive.html">School Live!</a></td>
+    <td>Série</td>
+  </tr>
+    <tr>
+    <td><a href="lain.html">Serial Experiments Lain</a></td>
+    <td>Série</td>
+  </tr>
+    <tr>
+    <td><a href="sociedade.html">Sociedade dos Poetas Mortos</a></td>
+    <td>Filme</td>
+  </tr>
+    <tr>
+    <td><a href="ultrakill.html">Ultrakill</a></td>
+    <td>Jogo</td>
+  </tr>
+    <tr>
+    <td><a href="vallhalla.html">VA-11 Hall-A</a></td>
+    <td>Jogo</td>
+  </tr>
+    <tr>
+    <td><a href="viva.html">Viva: A Vida é Uma Festa</a></td>
+    <td>Filme</td>
+  </tr>
+    <tr>
+    <td><a href="wandersong.html">Wandersong</a></td>
+    <td>Jogo</td>
+  </tr>
+    <tr>
+    <td><a href="yourname.html">Your Name</a></td>
+    <td>Filme</td>
+  </tr>
+      <tr>
+    <td><a href="zombielandsaga.html">ZombieLand Saga</a></td>
+    <td>Série</td>
+  </tr>
+</table>
+<br>
+
+    <footer>
+        Lucca Balestro, 2025 | <a href="/html/formopiniao.html">Mande sua opinião aqui!</a> | <a href="/html/contato.html">Faça contato aqui!</a>
+    </footer>
+</body>
+</html>

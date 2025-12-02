@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinião</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .radlab{
+            margin-left: 4px;
+            margin-right: 8px;
+        }
+        input{
+            line-height: 1.8em;
+
+        }
+        main{
+            margin-bottom: 6%;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<main>
+<header><strong><a href="./home.html">A Biblioteca</a></strong> | <a href="listjogos.html">Jogos</a> | <a href="listfilmes.html">Filmes e Séries</a> | <a href="buscar.html">Buscar</a> </header>
+<main>
+<div style="text-align: center;">
+    <div style="display: flex; justify-self: center; text-align: center; width: 40%">
+        <h2>Mande sua opinião!</h2>        
+    </div> 
+    <div style="display: flex; justify-self: center; text-align: left; width: 40%">
+    <form>
+        <a id="top" href="#bottom" style="display: flex; justify-self: left; text-align: center;">V Fim da página V</a><br> 
+        <label for="nome">Seu nome:</label><br>
+        <input id="nome" name="nome" style="width:50%;"><br><br>
+        <label for="mail">Seu email:</label><br>
+        <input type="email" id="mail" name="mail" style="width:60%;"><br><br>
+        <label for="phone">Seu telefone:</label><br>
+        <input id="phone" name="phone" style="width:50%;"><br><br>
+        <label for="midia">Escolha o assunto:</label><br>
+        <select style="font-size:large" name="midia" id="midia">
+            <option value="babaisyou">Baba is You</option>
+            <option value="bugfables">Bug Fables</option>
+            <option value="celeste">Celeste</option>
+            <option value="coraline">Coraline</option>
+            <option value="gravityfalls">Gravity Falls</option>
+            <option value="lain">Serial Experiments Lain</option>
+            <option value="pseudoregalia">Pseudoregalia</option>
+            <option value="schoollive">School Live</option>
+            <option value="silksong">Hollow Knight: Silksong</option>
+            <option value="sociedade">Sociedada dos Poetas Mortos</option>
+            <option value="ultrakill">Ultrakill</option>
+            <option value="vallhalla">VA-11 Hall-A</option>
+            <option value="viva">Viva: A Vida é Uma Festa</option>
+            <option value="wandersong">Wandersong</option>
+            <option value="yourname">Your Name</option>
+            <option value="zombielandsaga">ZombieLand Saga</option>            
+        </select><br><br>
+        <label for="gost">Gostou do site?</label><br>
+        <input type="checkbox" name="gost" id="gost"><br><br>
+        <label for="pros">Partes que gosta:</label><br>
+        <textarea name="pros" id="pros" rows="5" cols="60"></textarea><br><br>
+        <label for="cons">Partes que não gosta:</label><br>
+        <textarea name="cons" id="cons" rows="5" cols="60"></textarea><br><br>
+        <label for="exp">Suas experiências:</label><br>
+        <textarea name="exp" id="exp" rows="5" cols="60"></textarea><br><br>
+        <label for="com">Comentários adicionais:</label><br>
+        <textarea name="com" id="com" rows="5" cols="60"></textarea><br><br>
+        <div>
+        <label for="nota">Sua nota: </label><br>        
+        <label class="radlab" for="nota">1</label>
+        <label class="radlab" for="nota">2</label>
+        <label class="radlab" for="nota">3</label>
+        <label class="radlab" for="nota">4</label>
+        <label class="radlab" for="nota">5</label><br>
+        </div>
+        <input type="radio" id="nota" name="nota" value="1">
+        <input type="radio" id="nota" name="nota" value="2">
+        <input type="radio" id="nota" name="nota" value="3">
+        <input type="radio" id="nota" name="nota" value="4">
+        <input type="radio" id="nota" name="nota" value="5"><br><br>
+        <input type="submit" value="Mandar!">
+        <input type="reset" value="Resetar"><br><br>
+            <a id="bottom" href="#top">^ Começo da página ^</a>
+    </form>
+    </div>
+</div>
+</main>
+    <footer>
+        Lucca Balestro, 2025 | <u>Mande sua opinião aqui!</u> | <a href="/html/contato.html">Faça contato aqui!</a>
+    </footer>
+</main>
+</html>

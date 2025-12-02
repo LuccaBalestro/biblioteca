@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Filmes</title>
+    <style>
+              .shelf{
+            position: absolute;
+            background-image: url(/images/shelf.png); 
+            background-size: contain;
+            background-repeat: no-repeat;  
+            background-size: 100% 100%;
+            border: 2px solid rgb(109, 64, 47);
+            display: grid; 
+            width: 1000;
+            height: 1000;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+        }
+
+        .imgshelf{
+            margin: 30px; 
+            margin-left: 45px;
+            margin-right: 45px;
+            width: 125px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .imgshelf:hover{
+            scale: 120%;  
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <header><strong><a href="./home.html">A Biblioteca</a></strong> | <a href="listjogos.html">Jogos</a> | <u>Filmes e Séries</u> | <a href="busca.html">Buscar</a> </header>
+    <main>
+    <div class="shelf">
+       <a href="/html/coraline.html" title="Coraline"><img class="imgprin imgshelf" alt="Coraline capa" src="/images/Coralinecapa.png"></a>
+       <a href="/html/viva.html" title="Viva"><img class="imgprin imgshelf" alt="Viva capa" src="/images/vivacapa.png"></a>
+       <a href="/html/yourname.html" title="Your Name"><img class="imgprin imgshelf" alt="Your Name capa" src="/images/Your_Name.png"></a>
+       <a href="/html/sociedade.html" title="Sociedade dos Poetas Mortos"><img class="imgprin imgshelf" alt="Sociedade dos Poetas Mortos capa" src="/images/sociedadecapa.jpg"></a>
+       <a href="/html/gravityfalls.html" title="Gravity Falls"><img class="imgprin imgshelf" alt="Gravity Falls capa" src="/images/gravityfallscapa.jpg"></a>
+       <a href="/html/schoollive.html" title="School Live!"><img class="imgprin imgshelf" alt="Coraline capa" src="/images/schoollivecapa.jpg"></a>
+       <a href="/html/lain.html" title="Serial Experiments Lain"><img class="imgprin imgshelf" alt="Serial Experiments Lain capa" src="/images/laincapa.jpg"></a>
+       <a href="/html/zombielandsaga.html" title="ZombieLand Saga"><img class="imgprin imgshelf" alt="ZombieLand Saga capa" src="/images/zombielandsagacapa.jpg"></a>
+       </div>
+    </main> 
+    <footer>
+        Lucca Balestro, 2025 | <a href="/html/formopiniao.html">Mande sua opinião aqui!</a> | <a href="/html/contato.html">Faça contato aqui!</a>
+    </footer>
+</body>
+</html>
